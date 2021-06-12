@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GroupedItemComponent } from './grouped-item/grouped-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GroupedItemComponent
   ],
   imports: [
     BrowserModule,

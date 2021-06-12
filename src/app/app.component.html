@@ -11,14 +11,6 @@
 
 <h2>grouped by year </h2>
 
-  <div *ngFor="let items of groupedItem"> 
-    <div *ngFor="let item of items; let i = index"> 
-      <span> {{ item.id }}  </span>
-      <span> - {{ item.title }}  </span>
-      <span> - {{ item.desc }}  </span>
-      <span> - {{ item.cat }}  </span>
-      <span class="bold" *ngIf="i == 0"> - {{ item.year }} </span>   
-     </div>
-  </div>
+  <app-grouped-item *ngFor="let items of groupedItem" [item]="items"> </app-grouped-item>
 
 </div>

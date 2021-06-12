@@ -1,0 +1,9 @@
+<div class="border"> 
+    <div *ngFor="let singleItem of item; let i = index"> 
+      <span> {{ singleItem.id }}  </span>
+      <span> - {{ singleItem.title }}  </span>
+      <span> - {{ singleItem.desc }}  </span>
+      <span> - {{ singleItem.cat }}  </span>
+      <span class="bold" *ngIf="i == 0"> - {{ singleItem.year }} </span>   
+     </div>
+  </div>
