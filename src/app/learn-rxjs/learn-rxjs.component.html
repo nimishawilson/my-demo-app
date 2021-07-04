@@ -1,0 +1,13 @@
+<div>
+    <h1> usage of 'groupBy' in rxjs </h1>
+    <p> This is a set of un grouped data. We are grouping it based on year </p>
+    <div *ngFor="let item of tools">
+        <span> {{ item.id }} - </span>
+        <span> {{ item.title }} - </span>
+        <span> {{ item.desc }} - </span>
+        <span> {{ item.cat }} - </span>
+        <span> {{ item.year }} </span>
+    </div>
+    <h2>grouped by year </h2>
+    <app-grouped-item *ngFor="let items of groupedItem" [item]="items"> </app-grouped-item>
+</div>
