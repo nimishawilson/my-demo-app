@@ -1,1 +1,25 @@
-<p>learn-facade works!</p>
+<div *ngIf="vm$ | async as vm">
+
+    <div class="w-50 p-8 bg-1">
+        <div> Name: </div>
+        <input type="text" [value]="vm.regForm.name" #name>
+
+        <div> Email: </div>
+        <input type="text" [value]="vm.regForm.email" #email>
+
+        <div> Phone Number: </div>
+        <input type="text" [value]="vm.regForm.phoneNo" #phone>
+
+        <div> District: </div>
+        <input type="text" [value]="vm.regForm.district" #district>
+
+        <div> State: </div>
+        <input type="text" [value]="vm.regForm.state" #state>
+
+        <button class="button"
+            (click)="facade.updateRegistrationForm({ name: name.value, email: email.value, phoneNo: phone.value, district: district.value, state: state.value})">
+            Update
+            Facade </button>
+    </div>
+
+</div>
