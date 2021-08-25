@@ -7,6 +7,7 @@ import { GroupedItemComponent } from './grouped-item/grouped-item.component';
 import { LearnRxjsComponent } from './learn-rxjs/learn-rxjs.component';
 import { MenuComponent } from './menu/menu.component';
 import { LearnFacadeComponent } from './learn-facade/learn-facade.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LearnFacadeComponent } from './learn-facade/learn-facade.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
