@@ -8,6 +8,7 @@ import { LearnRxjsComponent } from './learn-rxjs/learn-rxjs.component';
 import { MenuComponent } from './menu/menu.component';
 import { LearnFacadeComponent } from './learn-facade/learn-facade.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectInfiniteScrollModule } from 'ng-mat-select-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSelectInfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
