@@ -8,6 +8,7 @@ import { LearnRxjsComponent } from './learn-rxjs/learn-rxjs.component';
 import { MenuComponent } from './menu/menu.component';
 import { LearnFacadeComponent } from './learn-facade/learn-facade.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CopyClipboardComponent } from './copy-clipboard/copy-clipboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     GroupedItemComponent,
     LearnRxjsComponent,
     MenuComponent,
-    LearnFacadeComponent
+    LearnFacadeComponent,
+    CopyClipboardComponent
   ],
   imports: [
     BrowserModule,
