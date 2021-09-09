@@ -7,4 +7,16 @@
 .copy-me-button {
     background-color: #84596B;
     color: #ffffff;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.copied-button {
+    background-color: #B58AA5;
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: 5px;
+}
+.flex-center {
+   display: flex;
+   justify-content: center;
 }

@@ -1,5 +1,10 @@
-<div class="text-container"> 
-    <button class="copy-me-button" (click)="copyContent()">Copy Me</button>
-    <p> {{ text }} </p>
- </div>
-
+<div class="flex-center">
+    <div class="text-container">
+        <button [ngClass]="isCopied ? 'copied-button' : 'copy-me-button'" (click)="copyContent()">
+            <span *ngIf="!isCopied; else copied"> Copy Me
+            </span>
+        </button>
+        <p> {{ text }} </p>
+    </div>
+</div>
+<ng-template #copied> copied </ng-template>
