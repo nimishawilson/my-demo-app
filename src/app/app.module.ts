@@ -9,6 +9,11 @@ import { MenuComponent } from './menu/menu.component';
 import { LearnFacadeComponent } from './learn-facade/learn-facade.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CopyClipboardComponent } from './copy-clipboard/copy-clipboard.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { MatSelectModule } from '@angular/material/select';
+import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,12 +22,17 @@ import { CopyClipboardComponent } from './copy-clipboard/copy-clipboard.componen
     LearnRxjsComponent,
     MenuComponent,
     LearnFacadeComponent,
-    CopyClipboardComponent
+    CopyClipboardComponent,
+    DropdownComponent,
+    ConfirmationModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSelectModule,
+    MatDialogModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
