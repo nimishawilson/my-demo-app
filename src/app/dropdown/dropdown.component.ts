@@ -26,7 +26,6 @@ export class DropdownComponent implements OnInit {
 
     this.previousOption = this.selectedOption;
     this.selectedOption = event.value;
-    // this.t = this.selectedOption;
 
     console.log('Selected option:', this.selectedOption);
     console.log('Previous option:', this.previousOption);
@@ -38,10 +37,11 @@ export class DropdownComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((confirmed: boolean) => {
       if (confirmed) {
-        this.t = this.selectedOption;
+        this.t = event.value;
         console.log('Clicked yes');
       } else {
         this.t = this.previousOption;
+        this.selectedOption = this.previousOption;
         console.log('Clicked no');
       }
     });
